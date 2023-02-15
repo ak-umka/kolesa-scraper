@@ -12,24 +12,23 @@ const pages = 2;
 (async () => {
   try {
     for (const page of arrayFromLength(8)) {
-      const url = page === 1 ? SITE : `${SITE}?page=${pages}`;
+      // const url = page === 1 ? SITE : `${SITE}?page=${pages}`;
+      const url = `${SITE}`
 
       const pageContent = await getPageContent(url);
       const $ = cheerio.load(pageContent);
-      const carsItems = [];
-
-      $('h5 > .a-card__link').each((i, header) => {
-        const title = $(header).text().trim();
-        const link = $(header).attr('href');
-        carsItems.push(
-          {
-            title,
-            link,
-            code: slugify(title)
-          }
-        );
+      const car = {}
+      $('.filter-car__extended-group > dl').each((i, el) => {
+        const title = $(el).find('dt').text().UpperCase();
+        const items = $(el).find('.filter-button__label').map((i, el) => {
+          const name = $(el).text().trim();
+          const slug = slugify(name).trim();
+          return { name, slug };
+        }).get(); 
+        car[title] = items;
       });
-      await listItemsHandler(carsItems);
+
+      console.log(car);
     }
   } catch (error) {
     console.log(chalk.red(error));

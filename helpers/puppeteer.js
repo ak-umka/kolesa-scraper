@@ -8,6 +8,7 @@ export const LAUNCH_PUPPETEER_OPTIONS = {
     '--disable-accelerated-2d-canvas',
     '--disable-gpu',
     '--window-size=1920,1080',
+    '--enable-features=NetworkService,NetworkServiceInProcess',
   ]
 };
 
@@ -19,12 +20,13 @@ export const PAGE_PUPPETEER_OPTIONS = {
 
 export async function getPageContent(url) {
   try {
-     const browser = await puppeteer.launch(LAUNCH_PUPPETEER_OPTIONS);
-      const page = await browser.newPage();
-      await page.goto(url, PAGE_PUPPETEER_OPTIONS);
-      const content = await page.content();
-      await browser.close();
-      return content;
+    const browser = await puppeteer.launch(LAUNCH_PUPPETEER_OPTIONS);
+    const page = await browser.newPage();
+    await page.goto(url, PAGE_PUPPETEER_OPTIONS);
+    await page.click('.filter-button');
+    const content = await page.content();
+    await browser.close();
+    return content;
   } catch (error) {
     throw error
   }
