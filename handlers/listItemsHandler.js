@@ -1,7 +1,8 @@
 import cheerio from "cherio";
 import chalk from "chalk";
+import { slugify } from "transliteration";
 
-import { getPageContent } from "../helpers/puppeteer.js";
+import { getPageContent, getModalContent } from "../helpers/puppeteer.js";
 import { formatPrice } from "../helpers/common.js";
 import saveData from "./saveData.js";
 
@@ -67,18 +68,45 @@ export default async function listItemsHandler(data) {
         }
       });
 
-
-      console.log(descriptionObject, 'descriptionObject');
-
       await saveData({
         ...initialData,
         priceNew,
         description: descriptionObject,
       });
+    }
+  } catch (error) {
+    console.log(chalk.red(error));
+  }
+}
 
-
-      // console.log(description, 'description');
-      // console.log(priceNew, 'priceNew');
+export async function carListModel(data) {
+  try {
+    // get only values from object with for loop 
+    const allCars = {};
+    for (const key in data) {
+      const values = data[key];
+      for (const value of values) {
+        // const { slug } = value;
+        let slug = value.slug;
+        if (slug === 'alga') {
+          slug = 'alha';
+        } 
+        const carModel = {};
+        const detailContent = await getModalContent('https://kolesa.kz/cars/' + slug);
+        const $ = cheerio.load(detailContent);
+        $('.filter-car__extended-group > dl').each((i, el) => {
+          const title = $(el).find('dt').text();
+          const items = $(el).find('.filter-button__label').map((i, el) => {
+            const name = $(el).text().trim();
+            const slug2 = slugify(name).trim();
+            return { name, slug: slug2 };
+          }).get();
+          carModel[title] = items;
+        });
+        console.log(carModel, 'carModel')
+        allCars[slug] = carModel;
+        console.log(JSON.stringify(allCars), 'allCars')
+      }
     }
   } catch (error) {
     console.log(chalk.red(error));

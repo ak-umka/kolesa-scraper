@@ -1,0 +1,202 @@
+{
+  "acura": {
+    "c": [
+      { "name": "CL", "slug": "cl" },
+      { "name": "CSX", "slug": "csx" }
+    ],
+    "e": [{ "name": "EL", "slug": "el" }],
+    "i": [
+      { "name": "ILX", "slug": "ilx" },
+      { "name": "Integra", "slug": "integra" }
+    ],
+    "l": [{ "name": "Legend", "slug": "legend" }],
+    "m": [{ "name": "MDX", "slug": "mdx" }],
+    "n": [{ "name": "NSX", "slug": "nsx" }],
+    "r": [
+      { "name": "RDX", "slug": "rdx" },
+      { "name": "RL", "slug": "rl" },
+      { "name": "RLX", "slug": "rlx" },
+      { "name": "RSX", "slug": "rsx" }
+    ],
+    "s": [{ "name": "SLX", "slug": "slx" }],
+    "t": [
+      { "name": "TL", "slug": "tl" },
+      { "name": "TLX", "slug": "tlx" },
+      { "name": "TSX", "slug": "tsx" }
+    ],
+    "z": [{ "name": "ZDX", "slug": "zdx" }]
+  },
+  "aito": {
+    "m": [
+      { "name": "M5", "slug": "m5" },
+      { "name": "M5 EV", "slug": "m5-ev" },
+      { "name": "M7", "slug": "m7" }
+    ]
+  },
+  "alfa-romeo": {
+    "1": [
+      { "name": "145", "slug": "145" },
+      { "name": "146", "slug": "146" },
+      { "name": "147", "slug": "147" },
+      { "name": "155", "slug": "155" },
+      { "name": "156", "slug": "156" },
+      { "name": "159", "slug": "159" },
+      { "name": "164", "slug": "164" },
+      { "name": "166", "slug": "166" }
+    ],
+    "3": [{ "name": "33", "slug": "33" }],
+    "4": [{ "name": "4C", "slug": "4c" }],
+    "7": [{ "name": "75", "slug": "75" }],
+    "8": [{ "name": "8C Competizione", "slug": "8c-competizione" }],
+    "b": [{ "name": "Brera", "slug": "brera" }],
+    "g": [
+      { "name": "Giulia", "slug": "giulia" },
+      { "name": "Giulietta", "slug": "giulietta" },
+      { "name": "GT", "slug": "gt" },
+      { "name": "GTV", "slug": "gtv" }
+    ],
+    "m": [{ "name": "MiTo", "slug": "mito" }],
+    "s": [
+      { "name": "Spider", "slug": "spider" },
+      { "name": "Stelvio", "slug": "stelvio" }
+    ]
+  },
+  "alha": {
+    "s": [
+      { "name": "SM41", "slug": "sm41" },
+      { "name": "SM42", "slug": "sm42" },
+      { "name": "SM43", "slug": "sm43" }
+    ]
+  },
+  "alpina": {
+    "b": [
+      { "name": "B10", "slug": "b10" },
+      { "name": "B11", "slug": "b11" },
+      { "name": "B12", "slug": "b12" },
+      { "name": "B3", "slug": "b3" },
+      { "name": "B4", "slug": "b4" },
+      { "name": "B5", "slug": "b5" },
+      { "name": "B6", "slug": "b6" },
+      { "name": "B7", "slug": "b7" },
+      { "name": "B8", "slug": "b8" }
+    ],
+    "d": [
+      { "name": "D10", "slug": "d10" },
+      { "name": "D3", "slug": "d3" },
+      { "name": "D5", "slug": "d5" }
+    ],
+    "r": [
+      { "name": "Roadster S", "slug": "roadster-s" },
+      { "name": "Roadster V8", "slug": "roadster-v8" }
+    ],
+    "x": [{ "name": "XD3", "slug": "xd3" }]
+  },
+  "aro": { "2": [{ "name": "24", "slug": "24" }] },
+  "aston-martin": {
+    "c": [{ "name": "Cygnet", "slug": "cygnet" }],
+    "d": [
+      { "name": "DB11", "slug": "db11" },
+      { "name": "DB7", "slug": "db7" },
+      { "name": "DB9", "slug": "db9" },
+      { "name": "DBS", "slug": "dbs" },
+      { "name": "DBX", "slug": "dbx" }
+    ],
+    "l": [{ "name": "Lagonda", "slug": "lagonda" }],
+    "o": [{ "name": "One-77", "slug": "one-77" }],
+    "r": [{ "name": "Rapide", "slug": "rapide" }],
+    "v": [
+      { "name": "V12 Zagato", "slug": "v12-zagato" },
+      { "name": "Vanquish", "slug": "vanquish" },
+      { "name": "Vantage", "slug": "vantage" },
+      { "name": "Virage", "slug": "virage" }
+    ]
+  },
+  "audi": {
+    "1": [{ "name": "100", "slug": "100" }],
+    "2": [{ "name": "200", "slug": "200" }],
+    "8": [{ "name": "80", "slug": "80" }],
+    "9": [{ "name": "90", "slug": "90" }],
+    "a": [
+      { "name": "A1", "slug": "a1" },
+      { "name": "A2", "slug": "a2" },
+      { "name": "A3", "slug": "a3" },
+      { "name": "A4", "slug": "a4" },
+      { "name": "A4 allroad", "slug": "a4-allroad" },
+      { "name": "A5", "slug": "a5" },
+      { "name": "A6", "slug": "a6" },
+      { "name": "A6 allroad", "slug": "a6-allroad" },
+      { "name": "A7", "slug": "a7" },
+      { "name": "A8", "slug": "a8" }
+    ],
+    "c": [
+      { "name": "Cabriolet", "slug": "cabriolet" },
+      { "name": "Coupe", "slug": "coupe" }
+    ],
+    "e": [
+      { "name": "e-tron", "slug": "e-tron" },
+      { "name": "e-tron GT", "slug": "e-tron-gt" },
+      { "name": "e-tron Sportback", "slug": "e-tron-sportback" }
+    ],
+    "q": [
+      { "name": "Q2", "slug": "q2" },
+      { "name": "Q2L e-tron", "slug": "q2l-e-tron" },
+      { "name": "Q3", "slug": "q3" },
+      { "name": "Q3 Sportback", "slug": "q3-sportback" },
+      { "name": "Q4 e-tron", "slug": "q4-e-tron" },
+      { "name": "Q5", "slug": "q5" },
+      { "name": "Q5 e-tron", "slug": "q5-e-tron" },
+      { "name": "Q5 Sportback", "slug": "q5-sportback" },
+      { "name": "Q7", "slug": "q7" },
+      { "name": "Q8", "slug": "q8" },
+      { "name": "Quattro", "slug": "quattro" }
+    ],
+    "r": [
+      { "name": "R8", "slug": "r8" },
+      { "name": "RS 2", "slug": "rs-2" },
+      { "name": "RS 3", "slug": "rs-3" },
+      { "name": "RS 4", "slug": "rs-4" },
+      { "name": "RS 5", "slug": "rs-5" },
+      { "name": "RS 6", "slug": "rs-6" },
+      { "name": "RS 7", "slug": "rs-7" },
+      { "name": "RS Q3", "slug": "rs-q3" },
+      { "name": "RS Q3 Sportback", "slug": "rs-q3-sportback" },
+      { "name": "RS Q8", "slug": "rs-q8" }
+    ],
+    "s": [
+      { "name": "S1", "slug": "s1" },
+      { "name": "S2", "slug": "s2" },
+      { "name": "S3", "slug": "s3" },
+      { "name": "S4", "slug": "s4" },
+      { "name": "S5", "slug": "s5" },
+      { "name": "S6", "slug": "s6" },
+      { "name": "S7", "slug": "s7" },
+      { "name": "S8", "slug": "s8" },
+      { "name": "SQ2", "slug": "sq2" },
+      { "name": "SQ5", "slug": "sq5" },
+      { "name": "SQ7", "slug": "sq7" },
+      { "name": "SQ8", "slug": "sq8" }
+    ],
+    "t": [{ "name": "TT", "slug": "tt" }],
+    "v": [{ "name": "V8", "slug": "v8" }]
+  },
+  "aurus": { "s": [{ "name": "Senat", "slug": "senat" }] },
+  "avatr": { "1": [{ "name": "11", "slug": "11" }] },
+  "baic": {
+    "b": [
+      { "name": "Beijing X7", "slug": "beijing-x7" },
+      { "name": "BJ40 Plus", "slug": "bj40-plus" },
+      { "name": "BJ60", "slug": "bj60" },
+      { "name": "BJ80", "slug": "bj80" }
+    ],
+    "d": [
+      { "name": "D50", "slug": "d50" },
+      { "name": "D70", "slug": "d70" }
+    ],
+    "e": [
+      { "name": "EC3", "slug": "ec3" },
+      { "name": "EU5", "slug": "eu5" }
+    ],
+    "s": [{ "name": "Senova D20", "slug": "senova-d20" }]
+  },
+  "bajaj": { "q": [{ "name": "Qute", "slug": "qute" }] }
+}
