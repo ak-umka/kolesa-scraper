@@ -48,3 +48,19 @@ export async function getModalContent(url) {
     console.log(error)
   }
 }
+
+export async function getCarGeneration(url) {
+  try {
+    const browser = await puppeteer.launch(LAUNCH_PUPPETEER_OPTIONS);
+    const page = await browser.newPage();
+    await page.goto(url, PAGE_PUPPETEER_OPTIONS);
+    const filterButton = await page.$$('.filter-button');
+    const lastElement = filterButton[filterButton.length - 1];
+    await lastElement.click();
+    const content = await page.content();
+    await browser.close();
+    return content;
+  } catch (error) {
+    console.log(error)
+  }
+}
